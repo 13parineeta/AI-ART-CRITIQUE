@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Art Critique</title>
+    <link rel="stylesheet" href="style.css"> <!-- External CSS link -->
+</head>
+<body>
+    <header>
+        <div class="title">AI Art Critique</div>
+    </header>
+
+    <div class="container">
+        <h1>Unleash your creativity with insights powered by AI</h1>
+        <p>Upload your art and get instant feedback!</p>
+        <div class="actions">
+            <label for="file-upload" class="upload-button">Choose File</label>
+            <input id="file-upload" type="file" accept="image/*,application/pdf">
+            <button type="button" id="upload-button">Upload and Get Feedback</button>
+        </div>
+        <div id="file-preview" class="file-preview">
+            <img id="preview-img" src="#" alt="Preview" style="display:none;">
+            <p id="preview-text" style="display:none;"></p>
+        </div>
+        <div id="result" style="display: none;">
+            <h3>Feedback:</h3>
+            <p id="result-text"></p>
+        </div>
+        <footer>
+            Built with ❤️ for artists and creators.
+        </footer>
+        <form id="upload-form" enctype="multipart/form-data">
+            <input type="file" name="file" id="file-input" accept="image/*,application/pdf" required>
+            
+        </form>
+
+        <div id="result">
+            <!-- Feedback message will be displayed here -->
+        </div>    
+    </div>
+
+  
+    <script src="script.js"></script> <!-- External JS link -->
+</body>
+</html>
